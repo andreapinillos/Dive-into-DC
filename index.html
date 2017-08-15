@@ -1,225 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Dive into DC</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-  <style>
-    body {
-        background-image: url("images/concrete_seamless.png");
-    } 
-    .test {
-      background: #fff; 
-      height: 50px; 
-      width: 250px; 
-      margin-top: 10px; 
-      padding: 20px; 
-      font-size: 20px; 
-      color: black;
-      }
-    .imageHolder {
-      margin-top: 10px;
-    }  
-  </style>
-  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="dcbutton.css">
+</head>
 <body>
-<!-- header -->
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">“PLAN LESS, EXPLORE MORE”</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">About Washington DC</a></li>
-      <li><a href="#">Emergency contact information</a></li>
-      <li><a href="#">How to use this App</a></li>
-    </ul>
-  </div>
-</nav>
-<!-- Main container-->
-<div class="container">
-    <div class="row">
-      <div class="col-md-12">
-      <div style="padding: 0px; overflow: auto">
-        <div style="color: #4aaaa5; font-size: 35px;">
-          <p><h1>Dive Into DC</h1></p></div>
-      </div>
-      </div>
-    </div>
-</div>
+<form>
+<h2> How many people are you going with? </h2>
+<input type='radio' name='people' value='self' id='self'> Self
+<input type='radio' name='people' value='couple' id='couple'> Couple
+<input type='radio' name='people' value='family' id='family'> Family
 
-<div class="container">
-<div style="background: #fff; padding: 20px;">
-    <div class="row">
-      <div class="col-md-12">
-      <div style="width: 85%;">
-        <div style="background-color: #ccc; height: 2px;"><hr> </div>
-        <div style="color: black; font-size: 20px;">
-          <p>How many day you will be in DC?</p></div>
-          <div class="row">
-          <div class="col-md-3">
-         <div class="imageHolders" id="one">
-           <img src="images/dc1.gif" alt="Nature" height="125px" width="100%" id="clickOne">   
-            <div class="carousel-caption">
-              <div style="background: #4aaaa5; font-size: 16px;">
-                <p>1 day</p></div>
-              </div>
-            </div>
-            </div>
-                    
-          <div class="col-md-3">
-          <div id="two" class="imageHolders">
-          <img src="images/dc2.gif" alt="Nature" height="125px" width="100%" id="clickTwo">
-            <div class="carousel-caption">
-              <div style="background: #4aaaa5; font-size: 16px;">
-                <p>3 days</p></div>
-                </div>
-              </div>
-            </div>
-                        
-          <div class="col-md-3">
-          <div id="three" class="imageHolders">
-          
-          <div class="imageDiv"><img src="images/dc1.gif" alt="Nature" height="125px" width="100%" id="clickThree">
-            <div class="carousel-caption">
-              <div style="background: #4aaaa5; font-size: 16px;">
-                <p>5 days</p></div>
-              </div>
-            </div>
-            
-          </div>
-          </div>
-         </div>
-           </div>
-           </div>
-           </div>
-  
-  <div class="row">
-      <div class="col-md-12">
-      <div style="width: 85%;">
-        <div style="background-color: #ccc; height: 2px;"><hr> </div>
-        <div style="color: black; font-size: 20px;">
-          <p>Yourself, Couple or Family?</p></div>
-          <div class="row">
-          <div class="col-md-3">
-          <div id="four">
-          <div style="margin-top: 10px;">
-          <img src="https://media.giphy.com/media/GR9Pw1sZa2XaU/giphy.gif" alt="Nature" height="125px" width="100%" id="clickFour"> 
-            <div class="carousel-caption">
-              <div style="background: #4aaaa5; font-size: 16px;">
-                <p>Myself</p></div>
-              </div>
-            </div>
-            </div>
-            </div>
+<h2> How many days are you staying? </h2>
+<input type='radio' name='days' value='1' id="oneDay"> 1 Day
+<input type='radio' name='days' value='3' id="threeDays"> 3 Days
+<input type='radio' name='days' value='5' id="fiveDays"> 5 Days
 
-            <div class="col-md-3">
-            <div id="five">
-          <div style="margin-top: 10px;">
-          <img src="images/couple.gif" alt="Nature" height="125px" width="100%" id="clickFive">
-            <div class="carousel-caption">
-              <div style="background: #4aaaa5; font-size: 16px;">
-                <p>Couple</p></div>
-              </div>
-            </div>
-            </div>
-            </div>
+<h2> How action packed do you want your day to be? </h2>
+<input type='radio' name='action' value='easy' id="easyDay"> Easy Going
+<input type='radio' name='action' value='medium' id="topDay"> Top Attractions
+<input type='radio' name='action' value='busy' id="busyDay"> Busy Day
 
-            <div class="col-md-3">
-            <div id="six">
-          <div style="margin-top: 10px;">
-          <img src="images/family.gif" alt="Nature" height="125px" width="100%" id="clickSix">
-            <div class="carousel-caption">
-              <div style="background: #4aaaa5; font-size: 16px;">
-                <p>Family</p></div>
-              </div>
-            </div>
-            </div>
-          </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    
-    <div class="row">
-      <div class="col-md-12">
-      <div style="width: 85%;">
-        <div style="background-color: #ccc; height: 2px;"><hr> </div>
-        <div style="color: black; font-size: 20px;">
-          <p>Choose your itinerary option:</p></div>
-          <div class="row">
-          <div class="col-md-3">
-          <div id="seven">
-          <div style="margin-top: 10px;">
-          <div class="imageDiv"><img src="images/food2.gif" alt="Nature" height="125px" width="100%" id="clickSeven"></div>
-            <div class="carousel-caption">
-              <div style="background: #4aaaa5; font-size: 16px;">
-                <p>Top Attractions</p></div>
-              </div>
-              </div>
-            </div>
-            </div>
 
-            <div class="col-md-3">
-            <div id="eight">
-          <div style="margin-top: 10px;">
-          <a href="#" target="_blank"><img src="images/art.gif" alt="Nature" height="125px" width="100%" id="clickEight"></a>       
-            <div class="carousel-caption">
-              <div style="background: #4aaaa5; font-size: 16px;">
-                <p>Packed Itinerary</p></div>
-              </div>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3">
-            <div id="nine">
-          <div style="margin-top: 10px;">
-          <a href="#" target="_blank"><img src="images/food1.gif" alt="Nature" height="125px" width="100%" id="clickNince"></a>       
-            <div class="carousel-caption">
-              <div style="background: #4aaaa5; font-size: 16px;">
-                <p>Easy Going</p></div>
-              </div>
-            </div>
-          </div>
-          </div>
-      </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</div>
-</div>
+</form>
+<button id="submitButton">Submit Button</button>
+<br>
+<br>
 
 <div class="container" id="display-itinerary">
   <div style="background: #fff; height: 450px; margin-top: 30px; padding: 20px; overflow: auto;">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-6">
        <div style="background-color: #ccc; height: 2px;"><hr> </div>
         <div style="color: black; font-size: 20px;">
         <br>
           <p><h2>Your Personalized Itinerary:</h2></p></div>
-
-        <div class="test" id="Morning">Morning Schedule: </div>
-        <div class="test" id="morning-schedule"></div>
-        <div class="test" id="Afternoon">Afternoon Schedule:</div>
-        <div class="test" id="afternoon-schedule"></div>
-        <div class="test" id="evening">Evening Schedule: </div>
-        <div class="test" id="evening-schedule"></div>
+        <div class="itinerary" id="Morning">Morning: 
+          <ul class="morningList"></ul>
         </div>
-       </div>
-      </div>      
-  </div>  
+       
+        <div class="itinerary" id="Afternoon">Afternoon:
+            <ul class="afternoonList"></ul>
+        </div>
+        
+        <div class="itinerary" id="evening">Evening: 
+            <ul class="eveningList"></ul>
+        </div> <br>
+      <div class="itinerary" id="weather">The Weather Forecase for today is: </div><br>
+      <div id="openweathermap-widget-15"></div>
 
-   
+
+</div>
+<div class="col-md-6">
+<div id="map" style="float:right; margin-right: 30px; margin-top: 80px; height: 400px; width: 400px"><hr></div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
 <!-- Footer -->
   <center>
     <div style="height: 60px; background: #666; border-top: 5px solid #4aaaa5; padding: 20px; margin-top: 20px; font-size: 16px;"><p> &copy; Team of Mahdia - Andrea - Khiem</p></div>
   </center>
-<script type="text/javascript" src="assets/javascript/main.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD85yQOwYvdRXaa8LwfhDbnNd5xYcQxFxo",
+    authDomain: "dc-button.firebaseapp.com",
+    databaseURL: "https://dc-button.firebaseio.com",
+    projectId: "dc-button",
+    storageBucket: "",
+    messagingSenderId: "656368330026"
+  };
+  firebase.initializeApp(config);
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAde-XEwDer3UAxRX_X4IZTRERIecXKPZI&callback=initMap">
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="dcbutton.js"></script>
+
+
+
 </body>
 </html>

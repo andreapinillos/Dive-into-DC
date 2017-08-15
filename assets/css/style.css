@@ -1,0 +1,26 @@
+body {
+        background-image: url("images/concrete_seamless.png");
+    } 
+    .test {
+      background: #fff; 
+      height: 50px; 
+      width: 250px; 
+      margin-top: 10px; 
+      padding: 20px; 
+      font-size: 20px; 
+      color: black;
+      }
+    .imageHolder {
+      margin-top: 10px;
+    }  
+
+  button{
+  display:block;
+  width:400px;
+  height:100px;
+  margin: 10px auto 0 auto;
+  border: 2px solid blue;;
+  cursor: pointer;
+  background: orange;
+  font-size: 42px;;
+}
